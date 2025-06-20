@@ -23,6 +23,7 @@ const courseData = [
     icon: Code,
     mentor: 'Leonardo Samuel',
     mentorImage: '/avatars/memo_35.png',
+    image: '/assets/frontend.jpg',
     progress: 50,
     badgeColor: 'bg-blue-100 text-blue-600',
   },
@@ -33,6 +34,7 @@ const courseData = [
     icon: Figma,
     mentor: 'Bayu Salto',
     mentorImage: '/avatars/memo_17.png',
+    image: '/assets/ui-designer.jpg',
     progress: 75,
     badgeColor: 'bg-purple-100 text-purple-600',
   },
@@ -43,6 +45,7 @@ const courseData = [
     icon: Palette,
     mentor: 'Padhang Satrio',
     mentorImage: '/avatars/memo_12.png',
+    image: '/assets/brand.jpg',
     progress: 30,
     badgeColor: 'bg-pink-100 text-pink-600',
   },
@@ -95,7 +98,7 @@ export function ContinueWatchingCard() {
                   >
                     <div className='relative'>
                       <Image
-                        src='/assets/course-image.jpg'
+                        src={course.image}
                         alt='Course thumbnail'
                         width={288}
                         height={140}
