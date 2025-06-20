@@ -2,6 +2,10 @@
 
 This project features a modern, responsive dashboard for an online course platform built with Next.js, TypeScript, and Framer Motion. The approach focused on breaking down monolithic components into smaller, reusable pieces while maintaining clean code architecture. Each component is enhanced with subtle animations and micro-interactions to create an engaging user experience. The design implements a mobile-first responsive strategy with careful attention to component composition, state management, and smooth transitions. Components are organized in a modular structure under `/components/dashboard/elements/` for better maintainability and reusability.
 
+## Preview
+
+![Dashboard Preview](.github/localhost_3000_.png)
+
 ## Known Limitations & Future Improvements
 
 - **Data Management**: Currently uses static mock data; would benefit from integration with a proper data fetching solution (React Query/SWR)
