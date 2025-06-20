@@ -47,7 +47,7 @@ export function Header() {
             >
               <Bell className='w-4 lg:w-5 h-4 lg:h-5 fill-black stroke-white stroke-1' />
               <motion.div
-                className='absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full border-2 border-white'
+                className='absolute -top-0.5 -right-0.5 w-3 h-3 bg-red-500 rounded-full border-2 border-white'
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
               />
