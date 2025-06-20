@@ -5,6 +5,7 @@ This project features a modern, responsive dashboard for an online course platfo
 ## Preview
 
 ![Dashboard Preview](.github/localhost_3000_.png)
+![Dashboard Implementation](thumbnail_image.png)
 
 ## Known Limitations & Future Improvements
 
