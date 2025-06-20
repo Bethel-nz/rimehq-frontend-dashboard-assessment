@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dashboard Components - Responsive Course Platform
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project features a modern, responsive dashboard for an online course platform built with Next.js, TypeScript, and Framer Motion. The approach focused on breaking down monolithic components into smaller, reusable pieces while maintaining clean code architecture. Each component is enhanced with subtle animations and micro-interactions to create an engaging user experience. The design implements a mobile-first responsive strategy with careful attention to component composition, state management, and smooth transitions. Components are organized in a modular structure under `/components/dashboard/elements/` for better maintainability and reusability.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Known Limitations & Future Improvements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Data Management**: Currently uses static mock data; would benefit from integration with a proper data fetching solution (React Query/SWR)
+- **Accessibility**: Could be enhanced with better ARIA labels, keyboard navigation, and screen reader support
+- **Performance**: Image optimization and lazy loading could be implemented for better performance
+- **Testing**: Component and integration tests need to be added
+- **State Management**: Complex state interactions would benefit from a proper state management solution (Zustand/Redux)
+- **Chart Responsiveness**: The statistics chart could be more responsive on very small screens
+- **Animation Performance**: Some animations could be optimized with `will-change` CSS property for better performance
+- **Theme System**: A proper theme system could be implemented for dark/light mode support
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Setup Instructions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Install dependencies:**
 
-## Learn More
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   bun install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Run the development server:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   bun dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Open your browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the dashboard.
 
-## Deploy on Vercel
+## Key Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 📱 Fully responsive design (mobile-first approach)
+- ✨ Smooth animations and micro-interactions with Framer Motion
+- 🎨 Modern UI components with shadcn/ui
+- 📊 Interactive charts and statistics
+- 🔧 Modular component architecture
+- 🎯 TypeScript for type safety
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **UI Components**: shadcn/ui
+- **Charts**: Recharts
+- **Icons**: Lucide React
+- **Language**: TypeScript
