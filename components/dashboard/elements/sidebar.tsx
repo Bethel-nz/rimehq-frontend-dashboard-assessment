@@ -41,13 +41,13 @@ export function Sidebar({ onClose }: SidebarProps) {
 
       <div className='space-y-6 flex-1'>
         <div>
-          <h3 className='text-xs font-medium text-gray-500 uppercase tracking-wider mb-3'>
+          <h3 className='text-sm font-medium text-gray-500 uppercase tracking-wider mb-3'>
             OVERVIEW
           </h3>
           <nav className='space-y-1'>
             <motion.a
               href='#'
-              className='flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg bg-purple-50 text-purple-600'
+              className='flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg text-purple-600'
               onClick={handleLinkClick}
               whileHover={{ x: 4 }}
               transition={{ duration: 0.2 }}
@@ -81,7 +81,7 @@ export function Sidebar({ onClose }: SidebarProps) {
         </div>
 
         <div>
-          <h3 className='text-xs font-medium text-gray-400 uppercase tracking-wider mb-3'>
+          <h3 className='text-sm font-medium text-gray-400 uppercase tracking-wider mb-3'>
             FRIENDS
           </h3>
           <div className='space-y-3'>
