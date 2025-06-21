@@ -105,21 +105,12 @@ export function ContinueWatchingCard() {
                         className='w-full h-28 lg:h-36 object-cover rounded-2xl lg:rounded-3xl'
                       />
                       <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
+                        whileTap={{ scale: [1, 1.2, 1] }}
+                        transition={{ duration: 0.2 }}
                       >
                         <Button
                           size='icon'
-                          className='absolute top-2 right-2 bg-black/20 rounded-full'
-                          style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
-                          onMouseEnter={(e) => {
-                            e.currentTarget.style.backgroundColor =
-                              'rgba(0, 0, 0, 0.7)';
-                          }}
-                          onMouseLeave={(e) => {
-                            e.currentTarget.style.backgroundColor =
-                              'rgba(0, 0, 0, 0.2)';
-                          }}
+                          className='absolute top-2 right-2 bg-black/20 hover:bg-black/40 rounded-full transition-colors duration-200'
                         >
                           <Heart
                             className='w-3 lg:w-4 h-3 lg:h-4 text-white'
