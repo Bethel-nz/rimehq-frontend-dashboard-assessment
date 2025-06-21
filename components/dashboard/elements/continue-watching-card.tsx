@@ -110,7 +110,16 @@ export function ContinueWatchingCard() {
                       >
                         <Button
                           size='icon'
-                          className='absolute top-2 right-2 bg-black/20 hover:bg-black/70 rounded-full transition-all duration-200'
+                          className='absolute top-2 right-2 bg-black/20 rounded-full'
+                          style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.backgroundColor =
+                              'rgba(0, 0, 0, 0.7)';
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.backgroundColor =
+                              'rgba(0, 0, 0, 0.2)';
+                          }}
                         >
                           <Heart
                             className='w-3 lg:w-4 h-3 lg:h-4 text-white'
